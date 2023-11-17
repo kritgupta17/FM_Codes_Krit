@@ -2,21 +2,25 @@
 
 int main()
  {
-
+    //intializing the required inputs
     char str[100];
     int i;
     char c;
     double fp;
 
+    //reading a string
     printf("Enter a string: ");
     scanf("%s", str);
 
+    //reading an integer
     printf("Enter an integer: ");
     scanf("%d", &i);
 
+    //reading a character
     printf("Enter a character: ");
     scanf(" %c", &c);
 
+    //reading a floating point value
     printf("Enter a double: ");
     scanf("%lf", &fp);
 
@@ -29,3 +33,4 @@ int main()
 
     return 0;
 }
+
