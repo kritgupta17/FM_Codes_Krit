@@ -7,7 +7,7 @@ int main() {
 
     // Input from the user
     printf("Enter a string: ");
-    scanf("%s", str);
+    gets(str);
 
     // Count the number of vowels in the string
     for (int i = 0; i < strlen(str); i++) {
@@ -24,3 +24,4 @@ int main() {
 
     return 0;
 }
+
