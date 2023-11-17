@@ -1,18 +1,20 @@
 #include<stdio.h>
 
+
 long int multiplyNumbers(int n);
 int main()
 {
     int n;
 
-    //Taking input from the user
+    //reading the integer
     printf("Enter a positive integer: ");
     scanf("%d",&n);
+    //printing the factorial using the function
     printf("Factorial of %d = %ld", n, multiplyNumbers(n));
     return 0;
 }
 
-//function for factorial of a number
+//functon to multiply numbers
 long int multiplyNumbers(int n)
  {
     if (n>=1)
@@ -20,3 +22,4 @@ long int multiplyNumbers(int n)
     else
         return 1;
 }
+
