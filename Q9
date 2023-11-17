@@ -4,6 +4,8 @@ int main()
     int mat[4][4],i,j;
     int sum=0;
     int sumd1=0,sumd2=0;
+
+    //reading the matrix
     printf("Enter the elements of the matrix:\n");
     for(i=0;i<4;i++)
     {
@@ -14,6 +16,7 @@ int main()
         }
     }
 
+    //printing the matrix
     printf("the matrix is:\n");
     for(i=0;i<4;i++)
     {
@@ -24,6 +27,7 @@ int main()
         printf("\n");
     }
 
+    //finding sum of all the elements
     for(i=0;i<4;i++)
     {
         for(j=0;j<4;j++)
@@ -32,6 +36,7 @@ int main()
         }
     }
 
+    //finding sum of primary diagonal
     for(i=0;i<4;i++)
     {
             sumd1=sumd1+mat[i][i];
@@ -47,7 +52,7 @@ int main()
 
 
 
-
+    //printing the values
     printf("The sum of all elements=%d\n",sum);
     printf("The sum of diagonal 1=%d\n",sumd1);
     printf("The sum of diagonal 2=%d\n",sumd2);
@@ -56,5 +61,8 @@ int main()
 
     return 0;
 }
+
+
+
 
 
