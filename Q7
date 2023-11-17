@@ -3,14 +3,21 @@
 int main()
 {
     int  n, j, i, swap;
+
+    //reading the number of elements
     printf("Enter number of elements\n");
     scanf("%d", &n);
     int array[n];
+
+    //reading an array
     printf("Enter %d integers\n", n);
     for (i=0;i<n;i++)
     {
         scanf("%d",&array[i]);
     }
+
+    //using a for loop to find the largest and swapping positions
+    //bubble sort
     for (i=0;i<n-1;i++)
     {
         for (j = 0 ; j < n - i- 1; j++)
@@ -30,3 +37,4 @@ int main()
         printf("%d\n", array[i]);
     return 0;
 }
+
