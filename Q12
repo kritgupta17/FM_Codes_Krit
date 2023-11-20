@@ -1,25 +1,23 @@
-#include<stdio.h>
-#include<string.h>
+#include <stdio.h>
+#include <stdlib.h>
+
 int main()
-{
-    char s[200];
-    int i,j,c=0;
+{   char ch;
+    FILE *file;
+    int count = 0;
 
-    //taking input from the user
-    printf("Enter your string:");
-    gets(s);
+    //Opens a file in read mode
+    file = fopen("data.txt","r");
 
-    //counting the number of words
-    for(i=0;s[i]!='\0';i++);
-        for(j=0;j<i;j++)
-            {
-            if(s[j]==' ' && s[j+1]!=' ')
-            c++;
-            }
+    //Gets each character till end of file is reached
+    while((ch = fgetc(file)) != EOF){
+        //Counts each word
+        if(ch ==' ' || ch == '\n')
+            count++;
+    }
 
-
-    printf("Number of words present: %d",c+1);
+    printf("Number of words present in given file: %d", count);
+    fclose(file);
 
     return 0;
 }
-
